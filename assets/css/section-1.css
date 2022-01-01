@@ -1,0 +1,157 @@
+.section-1 {
+  background-image: url('../images/section-1/hero-img.jpg');
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.section-1 .form-register {
+  background-image: radial-gradient(circle at 100% 100%, transparent 18px, #6ed3ff 18px, #6ed3ff 20px, transparent 20px), linear-gradient(to right, #6ed3ff, #6ed3ff), radial-gradient(circle at 0% 100%, transparent 18px, #6ed3ff 18px, #6ed3ff 20px, transparent 20px), linear-gradient(to bottom, #6ed3ff, #0053b4), radial-gradient(circle at 0% 0%, transparent 18px, #0053b4 18px, #0053b4 20px, transparent 20px), linear-gradient(to left, #0053b4, #0053b4), radial-gradient(circle at 100% 0%, transparent 18px, #0053b4 18px, #0053b4 20px, transparent 20px), linear-gradient(to top, #0053b4, #6ed3ff);
+  background-size: 20px 20px, calc(100% - 40px) 2px, 20px 20px, 2px calc(100% - 40px);
+  background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+  background-repeat: no-repeat;
+  margin-top: 30vh;
+  margin-left: auto;
+}
+
+.section-1 .form-register-header {
+  background-color: rgb(2 9 88 / 50%);
+}
+
+.form-register {
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  padding: 0;
+}
+
+.form-register form {
+  max-width: 365px;
+  margin: 0 auto;
+}
+
+.form-register-header,
+.form-register-body {
+  padding: 20px;
+}
+
+.form-register-header {
+  padding-bottom: 0;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  margin: 2px;
+}
+
+.form-register-header * {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.form-register-header h2 {
+  font-size: 22px;
+  margin-bottom: 17px;
+}
+
+.form-register-header h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.form-register-header h4 {
+  font-size: 30px;
+}
+
+.form-register-header h4 small {
+  font-size: 20px;
+}
+
+.form-register-header p {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.form-register-promo {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.form-register-promo .divider {
+  display: block;
+  width: 2px;
+  background: rgb(0,0,65);
+  background: linear-gradient(0deg, rgba(0,0,65,1) 0%, rgba(4,92,216,1) 50%, rgba(0,0,65,1) 100%);
+}
+
+.form-register-header::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  display: block;
+  margin: 0 -19px;
+  background: rgb(0,0,65);
+  background: linear-gradient(90deg, rgba(0,0,65,1) 0%, rgba(4,92,216,1) 50%, rgba(0,0,65,1) 100%);
+}
+
+.form-register-body .input-item {
+  margin-bottom: 17px;
+}
+
+.form-register-body input,
+.form-register-body input::placeholder,
+.form-register-body input:focus {
+  background-color: transparent;
+  padding: 10px 0;
+  color: white;
+  font-size: 18px;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 0;
+}
+
+.form-register-body .form-action {
+  margin-top: 25px;
+}
+
+.scroll-down {
+  font-size: 95px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+
+
+
+
+
+
+

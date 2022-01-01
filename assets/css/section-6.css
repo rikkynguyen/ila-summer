@@ -1,0 +1,109 @@
+.section-6 {
+  padding-top: 100px;
+}
+
+.section-6 .section-title {
+  margin-bottom: 50px;
+}
+
+.section-6 .carousel-inner {
+  overflow: visible;
+}
+
+.section-6 .carousel-item {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section-6 .carousel-item img{
+  width: 60%;
+}
+
+.section-6 .carousel-item .carousel-caption {
+  width: 60%;
+  padding: 24px;
+  left: 0;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  transform: translateY(-50%);
+  z-index: 0;
+  font-size: 17px;
+}
+
+.section-6 .carousel-item .carousel-caption h5 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.section-6 .carousel-item .carousel-caption h5::before {
+  content: '';
+  width: 55px;
+  height: 4px;
+  background-color: var(--navi);
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section-6 .carousel-item .carousel-caption::before,
+.section-6 .carousel-item .carousel-caption::after {
+  content: '';
+  width: 205px;
+  height: 145px;
+  position: absolute;
+  z-index: -1;
+}
+
+.section-6 .carousel-item .carousel-caption::before {
+  left: 0;
+  bottom: 0;
+  background-color: var(--yellow);
+}
+
+.section-6 .carousel-item .carousel-caption::after {
+  top: 0;
+  right: 0;
+  border: 3px solid var(--yellow);
+}
+
+.section-6 .carousel-item .carousel-caption .carousel-caption-inner {
+  background-color: var(--light);
+  padding: 60px 80px 150px;
+  text-align: left;
+  box-shadow: 2.294px 3.277px 4px 0px rgba(170, 170, 170, 0.66);
+}
+
+.section-6 [class^="carousel-control-"] {
+  width: 60px;
+  height: 60px;
+  bottom: auto;
+  font-size: 22px;
+  color: var(--black);
+  box-shadow: 0px 0px 4px 0px rgba(145, 145, 145, 0.43);
+  background: white;
+  opacity: 1;
+  border-radius: 50%;
+  top: 65%;
+  left: 100px;
+}
+
+.section-6 .carousel-control-next {
+  left: 180px;
+}
+
+@media (max-width: 1199.98px) {
+  .section-6 .carousel-item .carousel-caption .carousel-caption-inner {
+    padding: 30px 30px 80px;
+  }
+
+  .section-6 [class^="carousel-control-"] {
+    top: 75%;
+    left: 50px;
+  }
+
+  .section-6 .carousel-control-next {
+    left: 130px;
+  }
+}

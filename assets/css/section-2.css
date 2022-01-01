@@ -1,0 +1,66 @@
+.section-2 .section-top{
+  padding-top: 150px;
+  padding-bottom: 40px;
+  background-image: url('../images/section-2/globe.png');
+  background-color: white;
+  background-size: auto 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.section-2 .section-sub {
+  padding: 40px 0;
+  position: relative;
+  z-index: 0;
+}
+
+.section-2 .section-sub::before,
+.section-2 .section-sub::after {
+  content: '';
+  display: block;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.section-2 .section-sub::before {
+  background-image: url('../images/section-2/polygon-left.png');
+  background-position: left bottom;
+
+}
+
+.section-2 .section-sub::after {
+  background-image: url('../images/section-2/polygon-right.png');
+  background-position: right bottom;
+}
+
+.section-2 .section-sub .section-sub-title {
+  margin-bottom: 30px;
+}
+
+.treasure-wrap .treasure-icon {
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.treasure-wrap .treasure-icon [class^='icon-'],
+.treasure-wrap .treasure-icon [class*=' icon-'] {
+  font-size: 100px;
+  display: block;
+  color: white;
+}
+
+.treasure-wrap .treasure-content {
+  font-size: 22px;
+  line-height: 32px;
+  vertical-align: baseline;
+  font-weight: 500;
+}
+
+.treasure-wrap .treasure-content b {
+  font-size: 25px;
+  font-weight: 900;
+}
+
