@@ -39,8 +39,6 @@ section {
   scroll-snap-align: start;
 }
 
-.vh-100 { height: 100vh; }
-
 /* background */
 .bg-light       { background-color: var(--light); }
 .bg-navi        { background-color: var(--navi); }
@@ -162,6 +160,113 @@ header {
   z-index: 2;
 }
 
+/* button scroll down */
+
+.btn-scroll-down {
+  position: fixed;
+  width: 95px;
+  height: 95px;
+  right: 50px;
+  bottom: 50px;
+  background: var(--yellow);
+  color: var(--navi);
+  border-radius: 50%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.btn-scroll-down .icon-edit {
+  font-size: 45px;
+}
+
+.btn-scroll-down::after {
+  content: '\e900';
+  font-family: 'ila';
+  font-size: 30px;
+  position: absolute;
+  bottom: -50px;
+  opacity: 0.5;
+  color: white;
+}
+
+.navbar-connect .nav-link:hover {
+  color: var(--yellow)!important;
+}
+
+.navbar-connect .nav-item .nav-link {
+  font-weight: 700;
+  color: var(--navi);
+  font-size: 20px;
+}
+
+.navbar-connect .navbar-socials {
+  flex-direction: row;
+}
+
+.navbar-connect .navbar-socials .nav-link {
+  padding: 15px;
+  font-size: 30px;
+}
+
+.offcanvas-header .offcanvas-title {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+@media (max-width: 1199.98px) { 
+  .navbar-toggler {
+    margin-right: 20px;
+    border: none;
+    background-color: var(--navi);
+    border: none;
+    border-radius: 0;
+  }
+
+  .navbar-toggler::before,
+  .navbar-toggler::after {
+    content: '';
+  }
+
+  .navbar-toggler span,
+  .navbar-toggler::before,
+  .navbar-toggler::after {
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--yellow);
+  }
+
+  .text-lg { font-size: 27px; }
+
+}
+
+@media (max-width: 991.98px) {
+  .section-title { font-size: 45px; }
+}
+
+@media (max-width: 575.98px) {
+  .text-xl { font-size: 60px; }
+  .text-lg { font-size: 22px; }
+
+  .logo-img {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  .logo-img img {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1200px) {
   .navbar-connect {
     position: fixed;
@@ -174,6 +279,7 @@ header {
   .navbar-connect .main-nav {
     position: relative;
     width: auto;
+    flex-grow: inherit;
   }
 
   .navbar-connect .navbar-wrap {
@@ -211,16 +317,12 @@ header {
   }
 
   .navbar-connect .nav-item .nav-link {
-    font-weight: 700;
     color: white;
     padding-left: 0;
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-
-  .navbar-connect .nav-link:hover {
-    color: var(--yellow);
+    font-size: 16px;
   }
 
   .navbar-connect .nav-item .nav-link::before {

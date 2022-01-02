@@ -62,5 +62,27 @@
 .treasure-wrap .treasure-content b {
   font-size: 25px;
   font-weight: 900;
+  color: var(--navi);
 }
 
+@media (max-width: 575.98px) {
+  .treasure-wrap .treasure-icon{
+    padding: 24px;
+  }
+
+  .treasure-wrap .treasure-icon [class^='icon-'],
+  .treasure-wrap .treasure-icon [class*=' icon-'] {
+    font-size: 60px;
+  }
+
+  .treasure-wrap .treasure-content {
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 15px;
+    text-align: left;
+  }
+
+  .treasure-wrap .treasure-content b {
+    font-size: 20px;
+  }
+}

@@ -67,3 +67,25 @@
   background-color: var(--navi);
   transform: scaleY(7);
 }
+
+@media (max-width: 575.98px) {
+  .bg-big-wrap {
+    background-size: 450% auto;
+  }
+
+  .section-4 {
+    padding-top: 100px;
+  }
+
+  .section-4 .nav-tabs .nav-link {
+    font-size: 25px;
+  }
+
+  .stack-item .stack-action {
+    font-size: 18px;
+  }
+
+  .stack-item .stack-action .icon-add {
+    font-size: 40px;
+  }
+}

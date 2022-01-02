@@ -54,7 +54,7 @@ footer::before {
 
 @media (max-width: 991.98px) {
   footer::before {
-    top: 0;
+    top: -10px;
   }
 
   .section-7 {
