@@ -1,0 +1,79 @@
+.form-register-header * {
+  text-align: left;
+}
+
+.form-register-header h3 small {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-register-header a {
+  color: var(--red);
+  text-transform: none;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.section-1 .form-register {
+  background-color: rgba(0, 7, 71, 0.3);
+  border-radius: 20px;
+  margin-top: 35vh;
+}
+
+.section-1 .form-register,
+.form-register {
+  max-width: 100%;
+}
+
+.article {
+  margin-bottom: 70px;
+}
+
+.article .article-image {
+  margin-bottom: 20px;
+}
+
+.article .article-image img {
+  width: 100%;
+}
+
+.article .article-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.article .article-content h2 {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.article .article-content h3 {
+  font-size: 37px;
+  font-weight: 900;
+}
+
+.article .article-content a {
+  margin-top: auto;
+  color: var(--red);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.panel-reason .panel-number {
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .navbar-connect {
+    position: fixed;
+    inset: 0 auto 0 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 0 30px;
+    background-color: rgb(0, 11, 142, 0.3);
+    transform: none;
+  }
+}
