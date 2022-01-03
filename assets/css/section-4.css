@@ -68,6 +68,18 @@
   transform: scaleY(7);
 }
 
+@media (max-width: 1549px) {
+  .bg-big-wrap {
+    background-size: 130% auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .bg-big-wrap {
+    background-size: 320% auto;
+  }
+}
+
 @media (max-width: 575.98px) {
   .bg-big-wrap {
     background-size: 450% auto;
