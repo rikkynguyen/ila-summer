@@ -90,6 +90,11 @@
   left: 100px;
 }
 
+.section-6 [class^="carousel-control-"]:hover {
+  background-color: #e4e4e4;
+  color: white;
+}
+
 .section-6 .carousel-control-next {
   left: 180px;
 }
