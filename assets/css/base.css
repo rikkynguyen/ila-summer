@@ -39,6 +39,10 @@ section {
   scroll-snap-align: start;
 }
 
+.inset-0 {
+  inset: 0;
+}
+
 /* background */
 .bg-light       { background-color: var(--light); }
 .bg-navi        { background-color: var(--navi); }
@@ -273,6 +277,7 @@ header {
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
+    right: auto;
     z-index: 2;
   }
 
