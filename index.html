@@ -37,11 +37,11 @@
         </div>
         <div class="offcanvas-body navbar-wrap">
           <ul class="navbar-nav navbar-links">
-            <li class="nav-item"><a class="nav-link text-uppercase" href="#section-1">Trang chủ</a></li>
+            <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-uppercase" href="#section-1">Trang chủ</a></li>
             <li class="nav-item-connect"><span></span></li>
-            <li class="nav-item"><a class="nav-link text-uppercase" href="#section-4">Chường trình <br class="d-none d-lg-block">du học hè</a></li>
+            <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-uppercase" href="#section-4">Chường trình <br class="d-none d-lg-block">du học hè</a></li>
             <li class="nav-item-connect"><span></span></li>
-            <li class="nav-item"><a class="nav-link text-uppercase" href="#section-5">Lý do nên <br class="d-none d-lg-block">chọn ILA</a></li>
+            <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link text-uppercase" href="#section-5">Lý do nên <br class="d-none d-lg-block">chọn ILA</a></li>
           </ul>
           <ul class="navbar-nav navbar-socials">
             <li><a class="nav-link" href=""><span class="icon-facebook"></span></a></li>
@@ -519,27 +519,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./assets/js/autocomplete.js"></script>
-    <script>
-      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: '#navbar-scrollspy',
-        offset: -100,
-      });
-
-      $(window).scroll(function() {
-        if ($(window).width() <= 575.98) {
-          if ($(window).scrollTop() > 100) {
-            $('.logo-img').fadeIn();
-          } else {
-            $('.logo-img').fadeOut();
-          }
-        }
-
-        if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-          $('.btn-scroll-down').fadeOut();
-        } else {
-          $('.btn-scroll-down').fadeIn();
-        }
-      });
-    </script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
